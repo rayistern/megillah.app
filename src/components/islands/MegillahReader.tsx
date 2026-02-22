@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'preact/hooks';
 import { megillahText } from '../../lib/megillah-text';
 import { translationsEn } from '../../lib/megillah-translations-en';
+import { playRandomHamanSound, stopAllHamanSounds } from '../../lib/audio-effects';
 import type { Session, ScrollPosition } from '../../lib/useSession';
 
 type Lang = 'he' | 'en' | 'es' | 'ru' | 'fr' | 'pt' | 'it';
@@ -360,7 +361,6 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
   const [showIllustrations, setShowIllustrations] = useState(false);
   const [muted, setMuted] = useState(false);
   const [soundActive, setSoundActive] = useState(false);
-  const audioPool = useRef<HTMLAudioElement[]>([]);
   const soundTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollTextRef = useRef<HTMLDivElement>(null);
   const confettiFired = useRef(false);
@@ -467,20 +467,12 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const TOTAL_SOUNDS = 22;
-
   const playGragger = useCallback(() => {
     if (muted) return;
-    const idx = Math.floor(Math.random() * TOTAL_SOUNDS) + 1;
-    const audio = new Audio(`/sounds/gragger${idx}.mp3`);
-    audioPool.current.push(audio);
-    audio.play().catch(() => {});
-    audio.addEventListener('ended', () => {
-      audioPool.current = audioPool.current.filter((a) => a !== audio);
-    });
+    playRandomHamanSound();
     setSoundActive(true);
     if (soundTimer.current) clearTimeout(soundTimer.current);
-    soundTimer.current = setTimeout(() => setSoundActive(false), 5000);
+    soundTimer.current = setTimeout(() => setSoundActive(false), 2000);
   }, [muted]);
 
   // Ref so shake effect can read current mute state
@@ -491,8 +483,7 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
     setMuted(prev => {
       if (!prev) {
         // Muting: stop all playing sounds
-        audioPool.current.forEach(a => { a.pause(); a.currentTime = 0; });
-        audioPool.current = [];
+        stopAllHamanSounds();
         setSoundActive(false);
         if (soundTimer.current) clearTimeout(soundTimer.current);
       }
