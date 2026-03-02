@@ -1261,7 +1261,7 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
   const [loadedTranslations, setLoadedTranslations] = useState<TranslationMap | null>(null);
   const translationCache = useRef<Record<string, TranslationMap>>({});
   const deviceLang = useRef<Lang>(getInitialLang);
-  const [showIllustrations, setShowIllustrations] = useState(true);
+  const [showIllustrations, setShowIllustrations] = useState(false);
   const [activeWord, setActiveWord] = useState<string | null>(null);
   const [activeVerse, setActiveVerse] = useState<string | null>(null);
   const [trackingMode, setTrackingMode] = useState<'off' | 'verse' | 'word'>('off');
