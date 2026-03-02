@@ -4104,11 +4104,9 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
           background: var(--color-cream, #fdf6f0);
           padding: 3px 0;
           text-decoration: none;
-          opacity: 0.8;
         }
 
         .illustrations-banner:hover {
-          opacity: 1;
           text-decoration: underline;
         }
 
