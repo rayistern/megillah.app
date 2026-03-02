@@ -95,14 +95,143 @@ const HAMAN_TITLED_VERSES = new Set([
 ]);
 
 const ILLUSTRATIONS = [
-  { after: '1:1', src: '/illustrations/1-1-4.webp', he: 'המשתה המלכותי', en: 'The Royal Feast' },
-  { after: '1:10', src: '/illustrations/1-10-12.webp', he: 'ושתי מסרבת', en: 'Vashti Refuses' },
-  { after: '2:17', src: '/illustrations/2-17.webp', he: 'אסתר מוכתרת', en: 'Esther is Crowned' },
-  { after: '3:1', src: '/illustrations/3-1-2.webp', he: 'מרדכי מסרב להשתחוות', en: 'Mordechai Refuses to Bow' },
-  { after: '3:8', src: '/illustrations/3-8-11.webp', he: 'הגזירה הרעה', en: 'The Evil Decree' },
-  { after: '5:2', src: '/illustrations/5-1-2.webp', he: 'אסתר ניגשת אל המלך', en: 'Esther Approaches the King' },
-  { after: '6:1', src: '/illustrations/6-1.webp', he: 'המלך אינו ישן', en: 'The King Cannot Sleep' },
-  { after: '7:4', src: '/illustrations/7-3-4.webp', he: 'אסתר חושפת את המזימה', en: 'Esther Reveals the Plot' },
+  { after: '1:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.1_1_3x2.jpg' },
+  { after: '1:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.2_1_3x2.jpg' },
+  { after: '1:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.3_1_3x2.jpg' },
+  { after: '1:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.4_1_3x2.jpg' },
+  { after: '1:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.5_1_3x2.jpg' },
+  { after: '1:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.6_1_3x2.jpg' },
+  { after: '1:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.7_1_3x2.jpg' },
+  { after: '1:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.8_1_3x2.jpg' },
+  { after: '1:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.9_1_3x2.jpg' },
+  { after: '1:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.10_1_3x2.jpg' },
+  { after: '1:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.11_1_3x2.jpg' },
+  { after: '1:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.12_1_3x2.jpg' },
+  { after: '1:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.13_1_3x2.jpg' },
+  { after: '1:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.14_1_3x2.jpg' },
+  { after: '1:15', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.15_1_3x2.jpg' },
+  { after: '1:16', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.16_1_3x2.jpg' },
+  { after: '1:17', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.17_1_3x2.jpg' },
+  { after: '1:18', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.18_1_3x2.jpg' },
+  { after: '1:19', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.19_1_3x2.jpg' },
+  { after: '1:20', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.20_1_3x2.jpg' },
+  { after: '1:21', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.21_1_3x2.jpg' },
+  { after: '1:22', src: 'https://scroll.torahapp.org/imgs/Esther/esther.1.22_1_3x2.jpg' },
+  { after: '2:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.1_1_3x2.jpg' },
+  { after: '2:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.2_1_3x2.jpg' },
+  { after: '2:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.3_1_3x2.jpg' },
+  { after: '2:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.4_1_3x2.jpg' },
+  { after: '2:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.5_1_3x2.jpg' },
+  { after: '2:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.6_1_3x2.jpg' },
+  { after: '2:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.7_1_3x2.jpg' },
+  { after: '2:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.8_1_3x2.jpg' },
+  { after: '2:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.9_1_3x2.jpg' },
+  { after: '2:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.10_1_3x2.jpg' },
+  { after: '2:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.11_1_3x2.jpg' },
+  { after: '2:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.12_1_3x2.jpg' },
+  { after: '2:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.13_1_3x2.jpg' },
+  { after: '2:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.14_1_3x2.jpg' },
+  { after: '2:15', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.15_1_3x2.jpg' },
+  { after: '2:16', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.16_1_3x2.jpg' },
+  { after: '2:17', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.17_1_3x2.jpg' },
+  { after: '2:18', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.18_1_3x2.jpg' },
+  { after: '2:19', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.19_1_3x2.jpg' },
+  { after: '2:20', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.20_1_3x2.jpg' },
+  { after: '2:21', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.21_1_3x2.jpg' },
+  { after: '2:22', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.22_1_3x2.jpg' },
+  { after: '2:23', src: 'https://scroll.torahapp.org/imgs/Esther/esther.2.23_1_3x2.jpg' },
+  { after: '3:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.3.1_1_3x2.jpg' },
+  { after: '3:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.3.2_1_3x2.jpg' },
+  { after: '3:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.3.3_1_3x2.jpg' },
+  { after: '5:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.1_1_3x2.jpg' },
+  { after: '5:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.2_1_3x2.jpg' },
+  { after: '5:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.3_1_3x2.jpg' },
+  { after: '5:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.4_1_3x2.jpg' },
+  { after: '5:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.5_1_3x2.jpg' },
+  { after: '5:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.6_1_3x2.jpg' },
+  { after: '5:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.7_1_3x2.jpg' },
+  { after: '5:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.9_1_3x2.jpg' },
+  { after: '5:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.10_1_3x2.jpg' },
+  { after: '5:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.11_1_3x2.jpg' },
+  { after: '5:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.12_1_3x2.jpg' },
+  { after: '5:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.13_1_3x2.jpg' },
+  { after: '5:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.5.14_1_3x2.jpg' },
+  { after: '6:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.1_1_3x2.jpg' },
+  { after: '6:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.2_1_3x2.jpg' },
+  { after: '6:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.3_1_3x2.jpg' },
+  { after: '6:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.4_1_3x2.jpg' },
+  { after: '6:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.5_1_3x2.jpg' },
+  { after: '6:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.6_1_3x2.jpg' },
+  { after: '6:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.7_1_3x2.jpg' },
+  { after: '6:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.8_1_3x2.jpg' },
+  { after: '6:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.9_1_3x2.jpg' },
+  { after: '6:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.10_1_3x2.jpg' },
+  { after: '6:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.11_1_3x2.jpg' },
+  { after: '6:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.12_1_3x2.jpg' },
+  { after: '6:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.13_1_3x2.jpg' },
+  { after: '6:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.6.14_1_3x2.jpg' },
+  { after: '7:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.1_1_3x2.jpg' },
+  { after: '7:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.2_1_3x2.jpg' },
+  { after: '7:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.3_1_3x2.jpg' },
+  { after: '7:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.4_1_3x2.jpg' },
+  { after: '7:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.5_1_3x2.jpg' },
+  { after: '7:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.6_1_3x2.jpg' },
+  { after: '7:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.7_1_3x2.jpg' },
+  { after: '7:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.8_1_3x2.jpg' },
+  { after: '7:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.9_1_3x2.jpg' },
+  { after: '7:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.7.10_1_3x2.jpg' },
+  { after: '8:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.1_1_3x2.jpg' },
+  { after: '8:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.2_1_3x2.jpg' },
+  { after: '8:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.3_1_3x2.jpg' },
+  { after: '8:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.4_1_3x2.jpg' },
+  { after: '8:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.5_1_3x2.jpg' },
+  { after: '8:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.6_1_3x2.jpg' },
+  { after: '8:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.7_1_3x2.jpg' },
+  { after: '8:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.8_1_3x2.jpg' },
+  { after: '8:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.9_1_3x2.jpg' },
+  { after: '8:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.10_1_3x2.jpg' },
+  { after: '8:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.11_1_3x2.jpg' },
+  { after: '8:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.12_1_3x2.jpg' },
+  { after: '8:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.13_1_3x2.jpg' },
+  { after: '8:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.14_1_3x2.jpg' },
+  { after: '8:15', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.15_1_3x2.jpg' },
+  { after: '8:16', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.16_1_3x2.jpg' },
+  { after: '8:17', src: 'https://scroll.torahapp.org/imgs/Esther/esther.8.17_1_3x2.jpg' },
+  { after: '9:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.1_1_3x2.jpg' },
+  { after: '9:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.2_1_3x2.jpg' },
+  { after: '9:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.3_1_3x2.jpg' },
+  { after: '9:4', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.4_1_3x2.jpg' },
+  { after: '9:5', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.5_1_3x2.jpg' },
+  { after: '9:6', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.6_1_3x2.jpg' },
+  { after: '9:7', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.7_1_3x2.jpg' },
+  { after: '9:8', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.8_1_3x2.jpg' },
+  { after: '9:9', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.9_1_3x2.jpg' },
+  { after: '9:10', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.10_1_3x2.jpg' },
+  { after: '9:11', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.11_1_3x2.jpg' },
+  { after: '9:12', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.12_1_3x2.jpg' },
+  { after: '9:13', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.13_1_3x2.jpg' },
+  { after: '9:14', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.14_1_3x2.jpg' },
+  { after: '9:15', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.15_1_3x2.jpg' },
+  { after: '9:16', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.16_1_3x2.jpg' },
+  { after: '9:17', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.17_1_3x2.jpg' },
+  { after: '9:18', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.18_1_3x2.jpg' },
+  { after: '9:19', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.19_1_3x2.jpg' },
+  { after: '9:20', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.20_1_3x2.png' },
+  { after: '9:21', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.21_1_3x2.png' },
+  { after: '9:22', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.22_1_3x2.jpg' },
+  { after: '9:23', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.23_1_3x2.png' },
+  { after: '9:24', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.24_1_3x2.png' },
+  { after: '9:25', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.25_1_3x2.png' },
+  { after: '9:26', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.26_1_3x2.png' },
+  { after: '9:27', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.27_1_3x2.png' },
+  { after: '9:28', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.28_1_3x2.png' },
+  { after: '9:29', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.29_1_3x2.png' },
+  { after: '9:30', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.30_1_3x2.png' },
+  { after: '9:31', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.31_1_3x2.png' },
+  { after: '9:32', src: 'https://scroll.torahapp.org/imgs/Esther/esther.9.32_1_3x2.png' },
+  { after: '10:1', src: 'https://scroll.torahapp.org/imgs/Esther/esther.10.1_1_3x2.png' },
+  { after: '10:2', src: 'https://scroll.torahapp.org/imgs/Esther/esther.10.2_1_3x2.png' },
+  { after: '10:3', src: 'https://scroll.torahapp.org/imgs/Esther/esther.10.3_1_3x2.png' },
 ];
 
 const translations = {
@@ -2424,7 +2553,10 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
                 if (illustration) {
                   verseResult.push(
                     <div class={`illustration${lang === 'he' ? ' illustration-he' : ''}`} key={`ill-${verseKey}`}>
-                      <img src={illustration.src} alt={illustration[lang === 'he' ? 'he' : 'en']} loading="lazy" />
+                      <a href="https://torahapp.org" target="_blank" rel="noopener noreferrer" class="illustration-link">
+                        <img src={illustration.src} alt={`Esther ${verseKey}`} loading="lazy" />
+                        <span class="illustration-attribution">Illustrations © TorahApp.org</span>
+                      </a>
                     </div>
                   );
                 }
@@ -3956,9 +4088,25 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
           margin: 16px auto;
         }
 
+        .illustration-link {
+          display: block;
+          text-decoration: none;
+          color: inherit;
+        }
+
         .illustration img {
           width: 100%;
           border-radius: 8px;
+          display: block;
+        }
+
+        .illustration-attribution {
+          display: block;
+          font-size: 0.65rem;
+          text-align: center;
+          color: var(--color-text-light);
+          margin-top: 3px;
+          opacity: 0.75;
         }
 
         .verse-active {
