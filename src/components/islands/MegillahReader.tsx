@@ -2553,10 +2553,8 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
                 if (illustration) {
                   verseResult.push(
                     <div class={`illustration${lang === 'he' ? ' illustration-he' : ''}`} key={`ill-${verseKey}`}>
-                      <a href="https://torahapp.org" target="_blank" rel="noopener noreferrer" class="illustration-link">
-                        <img src={illustration.src} alt={`Esther ${verseKey}`} loading="lazy" />
-                        <span class="illustration-attribution">Illustrations © TorahApp.org</span>
-                      </a>
+                      <img src={illustration.src} alt={`Esther ${verseKey}`} loading="lazy" />
+                      <a href="https://torahapp.org" target="_blank" rel="noopener noreferrer" class="illustration-attribution">© torahapp.org</a>
                     </div>
                   );
                 }
@@ -4088,12 +4086,6 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
           margin: 16px auto;
         }
 
-        .illustration-link {
-          display: block;
-          text-decoration: none;
-          color: inherit;
-        }
-
         .illustration img {
           width: 100%;
           border-radius: 8px;
@@ -4107,6 +4099,12 @@ export default function MegillahReader({ standalone = false, showTitle = false, 
           color: var(--color-text-light);
           margin-top: 3px;
           opacity: 0.75;
+          text-decoration: none;
+        }
+
+        .illustration-attribution:hover {
+          opacity: 1;
+          text-decoration: underline;
         }
 
         .verse-active {
